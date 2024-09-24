@@ -1,0 +1,44 @@
+l = ()
+while True:
+    print("given all operations:")
+    print("1) for create a new list operation")
+    print("2) for append operation")
+    print("3) for remove operation")
+    print("4) for inserting operation")
+    print("5) for display list")
+    print("6) exit operation")
+    choice = int(input("choose your operation: "))
+    if choice == 1:
+        l =list(l)
+        x = int(input("how many elements: "))
+        print("enter elements:")
+        for i in range(x):
+            j = int(input())
+            l.append(j)
+        print(l)
+        l=tuple(l)
+    elif choice == 2:
+        l =list(l)
+        x = int(input("enter the number: "))
+        l.append(x)
+        print("number appended to your list")
+        l =tuple(l)
+    elif choice == 3:
+        l =list(l)  
+        y = int(input("enter the number: "))
+        if y in l:
+            l.remove(y)
+            print("element removed")
+        l =tuple(l)
+    elif choice == 4:
+        l=list(l)
+        z = int(input("enter the number you want index: "))
+        a = int(input("enter the number you want insert: "))
+        l.insert(z, a)
+        print(" list inserted")
+        l=tuple(l)
+    elif choice == 5:
+        print("your list is:", l)
+    else:
+        print("exit operation.....")
+        break
