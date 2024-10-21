@@ -1,0 +1,20 @@
+class Employee: 
+    count=0
+    def __init__(self,name,des,sal): 
+        self.name=name
+        self.des=des
+        self.sal=sal 
+        Employee.count+=1
+        def details(self): 
+         print(f"Name : {self.name}")
+         print(f"Designation : {self.des}")
+         print(f"Salary : {self.sal}")
+        def emp_count(): 
+         print(f"Total no. of Employees in organization is:{Employee.count}") 
+         o1=Employee("Alice","Manager",50000) 
+         o2=Employee("Bob","CEO",75000) 
+         o3=Employee("Sam","Developer",45000) 
+         o1.details() 
+         o2.details() 
+         o3.details() 
+Employee.emp_count() 
