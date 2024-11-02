@@ -1,0 +1,12 @@
+def myPop(l): 
+    a=l[-1]
+    del l[-1] 
+    return a 
+     
+l=[2,3,4,5,6,7]
+if len(l)==0: 
+    print("List does not contain enough elements")
+else: 
+    p=myPop(l)
+    print(f"Pop element is:{p}") 
+    print(f"List poping are : {l}") 
